@@ -1,0 +1,26 @@
+[package]
+name = "lazynote_core"
+description = "lazynote_core"
+version = { workspace = true }
+authors = { workspace = true }
+license = { workspace = true }
+repository = { workspace = true }
+edition = { workspace = true }
+
+[lib]
+name = "lazynote_core"
+crate-type = ["staticlib", "cdylib", "rlib"]
+path = "src/lib.rs"
+
+[dependencies]
+serde = { workspace = true, features = ["derive"] }
+serde_json = { workspace = true }
+lazy_static = { workspace = true }
+tokio = { workspace = true, features = ["full"] }
+anyhow = { workspace = true }
+log = { workspace = true }
+
+lazynote_common = { path = "../common" }
+lazynote_libs = { path = "../libs/" }
+
+tauri = { workspace = true, features = [] }

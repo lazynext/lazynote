@@ -1,0 +1,26 @@
+.workspaceRoot {
+  height: 100%;
+  width: 100%;
+}
+
+.workspaceTop {
+  width: 90%;
+}
+
+.workspaceLogo {
+  width: 300px;
+  height: 312px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.workspaceHandle {
+  margin-top: 10px;
+  min-width: 50%;
+  max-width: 90%;
+}
+
+.workspaceHistory {
+  width: 90%;
+}
