@@ -1,0 +1,56 @@
+{
+  "plugins": [
+    {
+      "name": "path",
+      "commands": [
+        "app_cache_dir",
+        "app_config_dir",
+        "app_data_dir",
+        "app_local_data_dir",
+        "app_log_dir",
+        "audio_dir",
+        "cache_dir",
+        "config_dir",
+        "data_dir",
+        "desktop_dir",
+        "document_dir",
+        "download_dir",
+        "executable_dir",
+        "font_dir",
+        "home_dir",
+        "local_data_dir",
+        "picture_dir",
+        "public_dir",
+        "resource_dir",
+        "runtime_dir",
+        "template_dir",
+        "data_path",
+        "local_res_path",
+        "local_data_path"
+      ]
+    },
+    {
+      "name": "store",
+      "commands": [
+        "file_path",
+        "file_name",
+        "reload",
+        "save",
+        "clear",
+        "delete",
+        "has",
+        "get",
+        "set",
+        "keys",
+        "values",
+        "len",
+        "is_empty",
+        "all"
+      ]
+    },
+    {
+      "name": "utils",
+      "commands": ["show_in_folder"]
+    }
+  ]
+}

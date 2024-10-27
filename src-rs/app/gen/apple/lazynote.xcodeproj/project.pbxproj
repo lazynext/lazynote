@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1AF56FF4361836F4CD5182ED /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 691D87E5F76F03F3A935361E /* Metal.framework */; };
+		4F1A35EADCF2BC514A47D77A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F698607944FC0311A46F252E /* Security.framework */; };
+		58159E4D0FDBDF57B0D8C986 /* libapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B3217706F76463BCD77650C /* libapp.a */; };
+		8100CB329F06FAF40F746587 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41FA2B3E8F66B023A40C2A9F /* MetalKit.framework */; };
+		8EAEE136A7BB5948B578A2B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ACC3EC08B720C67E631C287 /* UIKit.framework */; };
+		951C52ABF17EF1DD1638D11D /* assets in Resources */ = {isa = PBXBuildFile; fileRef = EAD2F6DB8BC91656D4BCDADB /* assets */; };
+		9C82F4FD4B7791EEB571E4D0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E80F680189B013E04A34D7 /* CoreGraphics.framework */; };
+		D4F91A57A066DF9B347E98A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CFFF0E12B45600128B83740 /* Assets.xcassets */; };
+		E524B281ACFF462F40009F5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 482257AB105DF933BE393D31 /* LaunchScreen.storyboard */; };
+		E7A6F46864C9CD80D61E54BD /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 805228ED71276848C755A90C /* main.mm */; };
+		F5970532E8CAD35183310DC4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD0166A6541A187FD665290 /* QuartzCore.framework */; };
+		FD5FB99EA99E2EDEA58FF8D7 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2576C7058944853F3A5BAD4B /* WebKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1B3217706F76463BCD77650C /* libapp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libapp.a; sourceTree = "<group>"; };
+		24E80F680189B013E04A34D7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2576C7058944853F3A5BAD4B /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		2CFFF0E12B45600128B83740 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		41FA2B3E8F66B023A40C2A9F /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		43D972C06C0AE211F8811251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		482257AB105DF933BE393D31 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4ACC3EC08B720C67E631C287 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4CBFA911FDAFE1722D137BFA /* core.rs */ = {isa = PBXFileReference; lastKnownFileType = text; path = core.rs; sourceTree = "<group>"; };
+		55FAF10623A4AC0BC23C2936 /* lib.rs */ = {isa = PBXFileReference; lastKnownFileType = text; path = lib.rs; sourceTree = "<group>"; };
+		691D87E5F76F03F3A935361E /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		73A25D5304977B580EB4D517 /* main.rs */ = {isa = PBXFileReference; lastKnownFileType = text; path = main.rs; sourceTree = "<group>"; };
+		805228ED71276848C755A90C /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		81C30C7BF6EEAE7D9B352A4B /* lazynote_iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = lazynote_iOS.entitlements; sourceTree = "<group>"; };
+		B6BE4D808212874B35EA8FE3 /* bindings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bindings.h; sourceTree = "<group>"; };
+		BAC5B731BF5246AEC30320E9 /* invoke.rs */ = {isa = PBXFileReference; lastKnownFileType = text; path = invoke.rs; sourceTree = "<group>"; };
+		BAD0166A6541A187FD665290 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D6022684971363D69B491579 /* LazyNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LazyNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAD2F6DB8BC91656D4BCDADB /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = SOURCE_ROOT; };
+		F698607944FC0311A46F252E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		201E288FA6F1C32D63EACB81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58159E4D0FDBDF57B0D8C986 /* libapp.a in Frameworks */,
+				9C82F4FD4B7791EEB571E4D0 /* CoreGraphics.framework in Frameworks */,
+				1AF56FF4361836F4CD5182ED /* Metal.framework in Frameworks */,
+				8100CB329F06FAF40F746587 /* MetalKit.framework in Frameworks */,
+				F5970532E8CAD35183310DC4 /* QuartzCore.framework in Frameworks */,
+				4F1A35EADCF2BC514A47D77A /* Security.framework in Frameworks */,
+				8EAEE136A7BB5948B578A2B8 /* UIKit.framework in Frameworks */,
+				FD5FB99EA99E2EDEA58FF8D7 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01914157D420D8D880E858E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24E80F680189B013E04A34D7 /* CoreGraphics.framework */,
+				1B3217706F76463BCD77650C /* libapp.a */,
+				691D87E5F76F03F3A935361E /* Metal.framework */,
+				41FA2B3E8F66B023A40C2A9F /* MetalKit.framework */,
+				BAD0166A6541A187FD665290 /* QuartzCore.framework */,
+				F698607944FC0311A46F252E /* Security.framework */,
+				4ACC3EC08B720C67E631C287 /* UIKit.framework */,
+				2576C7058944853F3A5BAD4B /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D2D3A2488FAB41D75B2CD00 /* lazynote_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				43D972C06C0AE211F8811251 /* Info.plist */,
+				81C30C7BF6EEAE7D9B352A4B /* lazynote_iOS.entitlements */,
+			);
+			path = lazynote_iOS;
+			sourceTree = "<group>";
+		};
+		40361E6F577402D4B96D5616 = {
+			isa = PBXGroup;
+			children = (
+				EAD2F6DB8BC91656D4BCDADB /* assets */,
+				2CFFF0E12B45600128B83740 /* Assets.xcassets */,
+				482257AB105DF933BE393D31 /* LaunchScreen.storyboard */,
+				E218C92377C156C60F376C21 /* Externals */,
+				2D2D3A2488FAB41D75B2CD00 /* lazynote_iOS */,
+				D2E5D7D3C279F1677AEC5A65 /* Sources */,
+				61EA46FB2E45A46864EF8BD0 /* src */,
+				01914157D420D8D880E858E5 /* Frameworks */,
+				564300778D561208569F45B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		564300778D561208569F45B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6022684971363D69B491579 /* LazyNote.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		606C8402B9D800F5E254BC61 /* bindings */ = {
+			isa = PBXGroup;
+			children = (
+				B6BE4D808212874B35EA8FE3 /* bindings.h */,
+			);
+			path = bindings;
+			sourceTree = "<group>";
+		};
+		61EA46FB2E45A46864EF8BD0 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				4CBFA911FDAFE1722D137BFA /* core.rs */,
+				BAC5B731BF5246AEC30320E9 /* invoke.rs */,
+				55FAF10623A4AC0BC23C2936 /* lib.rs */,
+				73A25D5304977B580EB4D517 /* main.rs */,
+			);
+			name = src;
+			path = ../../src;
+			sourceTree = "<group>";
+		};
+		D2E5D7D3C279F1677AEC5A65 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E606BC69B17516F6FEA68F15 /* lazynote */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		E218C92377C156C60F376C21 /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Externals;
+			sourceTree = "<group>";
+		};
+		E606BC69B17516F6FEA68F15 /* lazynote */ = {
+			isa = PBXGroup;
+			children = (
+				805228ED71276848C755A90C /* main.mm */,
+				606C8402B9D800F5E254BC61 /* bindings */,
+			);
+			path = lazynote;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1BB111FB748C750AC5222F07 /* lazynote_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B4534B106F6757D5D4EAEA6 /* Build configuration list for PBXNativeTarget "lazynote_iOS" */;
+			buildPhases = (
+				B5C4B3E81ED4930B9308EFF9 /* Build Rust Code */,
+				FC8AB2CA05281C05A4489D10 /* Sources */,
+				5DC2EA58FF163DF494C67848 /* Resources */,
+				201E288FA6F1C32D63EACB81 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lazynote_iOS;
+			productName = lazynote_iOS;
+			productReference = D6022684971363D69B491579 /* LazyNote.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		615D40B8E753BD5F2450D60D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = C71B7291166C6F846380F141 /* Build configuration list for PBXProject "lazynote" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 40361E6F577402D4B96D5616;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BB111FB748C750AC5222F07 /* lazynote_iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5DC2EA58FF163DF494C67848 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4F91A57A066DF9B347E98A9 /* Assets.xcassets in Resources */,
+				E524B281ACFF462F40009F5A /* LaunchScreen.storyboard in Resources */,
+				951C52ABF17EF1DD1638D11D /* assets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B5C4B3E81ED4930B9308EFF9 /* Build Rust Code */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Rust Code";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/Externals/x86_64/${CONFIGURATION}/libapp.a",
+				"$(SRCROOT)/Externals/arm64/${CONFIGURATION}/libapp.a",
+				"$(SRCROOT)/Externals/arm64-sim/${CONFIGURATION}/libapp.a",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "pnpm tauri ios xcode-script -v --platform ${PLATFORM_DISPLAY_NAME:?} --sdk-root ${SDKROOT:?} --framework-search-paths \"${FRAMEWORK_SEARCH_PATHS:?}\" --header-search-paths \"${HEADER_SEARCH_PATHS:?}\" --gcc-preprocessor-definitions \"${GCC_PREPROCESSOR_DEFINITIONS:-}\" --configuration ${CONFIGURATION:?} ${FORCE_COLOR} ${ARCHS:?}";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC8AB2CA05281C05A4489D10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7A6F46864C9CD80D61E54BD /* main.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		21B02D7E565E4449A9D21AF9 /* debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = debug;
+		};
+		5143F9A9FA79E39407D18829 /* release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = (
+					arm64,
+					"arm64-sim",
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = lazynote_iOS/lazynote_iOS.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = FJBGV8R3G8;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphoneos*]" = "arm64-sim x86_64";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\".\"",
+				);
+				INFOPLIST_FILE = lazynote_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=arm64-sim]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Externals/arm64-sim/$(CONFIGURATION)",
+					"$(SDKROOT)/usr/lib/swift",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=arm64]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Externals/arm64/$(CONFIGURATION)",
+					"$(SDKROOT)/usr/lib/swift",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=x86_64]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Externals/x86_64/$(CONFIGURATION)",
+					"$(SDKROOT)/usr/lib/swift",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lazynext.lazynote;
+				PRODUCT_NAME = LazyNote;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64  arm64-sim";
+			};
+			name = release;
+		};
+		86F0E4B4046A784EC193F9A6 /* debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = (
+					arm64,
+					"arm64-sim",
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = lazynote_iOS/lazynote_iOS.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = FJBGV8R3G8;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphoneos*]" = "arm64-sim x86_64";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\".\"",
+				);
+				INFOPLIST_FILE = lazynote_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=arm64-sim]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Externals/arm64-sim/$(CONFIGURATION)",
+					"$(SDKROOT)/usr/lib/swift",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=arm64]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Externals/arm64/$(CONFIGURATION)",
+					"$(SDKROOT)/usr/lib/swift",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=x86_64]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Externals/x86_64/$(CONFIGURATION)",
+					"$(SDKROOT)/usr/lib/swift",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lazynext.lazynote;
+				PRODUCT_NAME = LazyNote;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64  arm64-sim";
+			};
+			name = debug;
+		};
+		93D776F2E780BE86E8BB9CDB /* release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B4534B106F6757D5D4EAEA6 /* Build configuration list for PBXNativeTarget "lazynote_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86F0E4B4046A784EC193F9A6 /* debug */,
+				5143F9A9FA79E39407D18829 /* release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = debug;
+		};
+		C71B7291166C6F846380F141 /* Build configuration list for PBXProject "lazynote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21B02D7E565E4449A9D21AF9 /* debug */,
+				93D776F2E780BE86E8BB9CDB /* release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 615D40B8E753BD5F2450D60D /* Project object */;
+}

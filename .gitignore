@@ -1,0 +1,20 @@
+logs
+*.log*
+
+node_modules
+
+.eslintcache
+
+# OSX
+.DS_Store
+
+dist
+out
+build
+target
+
+.idea
+
+*.tsbuildinfo
+
+public/libs/
