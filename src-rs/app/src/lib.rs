@@ -77,6 +77,7 @@ pub fn run() {
 
             #[cfg(target_os = "macos")]
             {
+                use tauri_plugin_decorum::WebviewWindowExt;
                 // MacOS标题栏
                 win.set_title_bar_style(tauri::TitleBarStyle::Overlay)
                     .unwrap();
